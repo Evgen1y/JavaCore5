@@ -1,6 +1,6 @@
 package Module4;
 
-import java.util.Currency;
+
 
 /**
  * Created by bulov on 19.11.2016.
@@ -15,11 +15,10 @@ public abstract class Bank {
 
     abstract int getLimitOfWithdrawal();
     abstract int getLimitOfFunding();
-    abstract int getMonthlyRate();
-    abstract int getCommission(int summ);
+    abstract double getMonthlyRate();
+    abstract double getCommission(int summ);
     double moneyPaidMonthlyForSalary(){
-        double c = 0;
-        return c;
+        return 0;
     }
 
 
@@ -30,6 +29,10 @@ public abstract class Bank {
         this.numberOfEmployee = numberOfEmployee;
         this.rating = rating;
         this.totalCapital = totalCapital;
+    }
+
+    public Bank(){
+
     }
 
     public long getId() {
