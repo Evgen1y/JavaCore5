@@ -1,6 +1,6 @@
 package Module5;
 
-public class test {
+public class Main {
     public static void main(String[] args) {
         Controller controller = new Controller();
         BookingComAPI bookingComAPI = new BookingComAPI();
